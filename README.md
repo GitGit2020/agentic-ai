@@ -33,12 +33,12 @@ pip install -r requirements.txt
 ## Data Schema
 
 The gapminder dataset contains:
-    - country: object
-    - continent: object
-    - year: int64
-    - lifeExp: float64
-    - pop: int64
-    - gdpPercap: float64
+- country: object
+- continent: object
+- year: int64
+- lifeExp: float64
+- pop: int64
+- gdpPercap: float64
 
 ## Running the Activity
 
