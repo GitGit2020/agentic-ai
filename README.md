@@ -27,8 +27,8 @@ pip install -r requirements.txt
 - `reflection_chart_generation.ipynb` - Main notebook demonstrating visualization reflection workflow
 - `utils.py` - Utility functions for image processing and chart generation
 - Generated outputs:
-  - `chart_v1.jpg` - Initial visualization
-  - `chart_v2_chart.jpg` - Improved visualization after feedback
+  - `chart_v1.png` - Initial visualization
+  - `chart_v2.png` - Improved visualization after feedback
 
 ## Data Schema
 
