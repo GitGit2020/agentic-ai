@@ -32,14 +32,13 @@ pip install -r requirements.txt
 
 ## Data Schema
 
-`coffee_sales.csv` contains:
-- `date` (M/D/YY) - Sale date
-- `time` (HH:MM) - Sale time
-- `cash_type` - Payment method (card/cash)
-- `card` - Credit card identifier
-- `price` - Sale amount in dollars
-- `coffee_name` - Type of coffee drink
-- Calculated: `quarter`, `month`, `year`
+The gapminder dataset contains:
+    - country: object
+    - continent: object
+    - year: int64
+    - lifeExp: float64
+    - pop: int64
+    - gdpPercap: float64
 
 ## Running the Activity
 
@@ -51,8 +50,6 @@ pip install -r requirements.txt
    - Load the gapminder dataset
    - Execute visualization workflows with different model combinations
    - Generate charts and improvement feedback
-
-   ```
 
 ## Key Learning Points
 
