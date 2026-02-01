@@ -43,7 +43,7 @@ The gapminder dataset contains:
 ## Running the Activity
 
 1. **Open and run the notebook**:
-   - Open `reflection_chart_generation.ipynb.ipynb` in Jupyter
+   - Open `reflection_chart_generation.ipynb` in Jupyter
    - Run all cells sequentially
 
 2. **The notebook will**:
