@@ -1,84 +1,78 @@
-# Visualization Agent with Reflection - Chart Improvement
+# Agentic AI: Reflection and Tool Use
 
-This activity demonstrates the reflection design pattern for data visualization, where one LLM generates matplotlib charts and another critiques and improves them through iterative feedback.
+This repository contains practical notebooks that demonstrate the core control patterns behind agentic AI systems.
 
-## Overview
+Rather than focusing on frameworks, these notebooks break down the fundamental building blocks that enable agents to reason, extend capabilities, and improve outputs.
 
-The visualization agent follows a reflection-based workflow:
-1. **Generate**: Create matplotlib code from natural language instruction
-2. **Execute**: Run the code to generate the initial chart
-3. **Evaluate**: Have another LLM critique the chart by analyzing the image
-4. **Refine**: Improve the visualization code based on feedback
-5. **Compare**: Generate side-by-side comparison of original vs improved charts
+---
+
+## Notebooks Overview
+
+### 1️⃣ Reflection — Chart Generation and Improvement
+
+`reflection_chart_generation.ipynb`
+
+Demonstrates the **reflection design pattern**, where:
+
+- One LLM generates a visualization
+- Another LLM evaluates the result
+- The system revises the output based on structured feedback
+
+Control loop introduced:
+
+Generate → Evaluate → Revise
+
+Key ideas:
+- Output validation as a control mechanism
+- Structured critique of artifacts (charts)
+- Separation of generation and evaluation roles
+- Iterative refinement
+
+---
+
+### 2️⃣ Tool Use — Retail Agent with Multiple Tools
+
+`tool_use_retail_agent.ipynb`
+
+Demonstrates how agents extend their capabilities using deterministic tools over external data.
+
+The notebook introduces:
+
+Interpret → Decide → Execute → Integrate
+
+Key ideas:
+- Detecting when model knowledge is insufficient
+- Selecting the appropriate tool from multiple options
+- Structured argument contracts
+- Integrating tool outputs into final reasoning
+- Handling tool failures gracefully
+- Avoiding unnecessary tool calls
+
+The retail example uses transactional data to simulate interaction with an external system.
+
+---
+
+## Core Concepts Covered
+
+Across both notebooks, the following agentic principles are demonstrated:
+
+- **Control Loops**: Structured reasoning before and after actions
+- **Separation of Concerns**: Generation vs evaluation vs execution
+- **Deterministic Tools**: External capabilities as strict interfaces
+- **Structured Outputs**: JSON-based decision making
+- **Failure Handling**: Robust behavior when tools return missing data
+- **Conditional Capability Use**: Agents must decide when to act
+
+---
 
 ## Prerequisites
 
-Ensure you have a `.env` file in the root of the repository with API keys for:
-- `OPENAI_API_KEY` - OpenAI API access
-- `ANTHROPIC_API_KEY` - Anthropic Claude access
+Create a `.env` file in the root of the repository with:
 
-Install dependencies from the root directory:
+- `OPENAI_API_KEY`
+- `ANTHROPIC_API_KEY`
+
+Install dependencies:
+
 ```bash
 pip install -r requirements.txt
-```
-
-## Files
-
-- `reflection_chart_generation.ipynb` - Main notebook demonstrating visualization reflection workflow
-- `utils.py` - Utility functions for image processing and chart generation
-- Generated outputs:
-  - `chart_v1.png` - Initial visualization
-  - `chart_v2.png` - Improved visualization after feedback
-
-## Data Schema
-
-The gapminder dataset contains:
-- country: object
-- continent: object
-- year: int64
-- lifeExp: float64
-- pop: int64
-- gdpPercap: float64
-
-## Running the Activity
-
-1. **Open and run the notebook**:
-   - Open `reflection_chart_generation.ipynb` in Jupyter
-   - Run all cells sequentially
-
-2. **The notebook will**:
-   - Load the gapminder dataset
-   - Execute visualization workflows with different model combinations
-   - Generate charts and improvement feedback
-
-## Key Learning Points
-
-- **Visual Reflection**: How LLMs can critique visual content through image analysis
-- **Code Improvement**: Iterative enhancement of matplotlib code based on feedback
-- **Multi-Modal AI**: Using vision-capable models to evaluate chart quality
-- **Model Specialization**: Different models for generation vs evaluation tasks
-- **Comparative Analysis**: Side-by-side evaluation of improvements
-
-## Expected Outputs
-
-The workflow demonstrates visual improvement through reflection:
-
-1. **Original Chart**: Initial visualization with potential issues (formatting, clarity, etc.)
-2. **Evaluation Feedback**: Detailed critique of chart quality, readability, and effectiveness
-3. **Refined Chart**: Improved version addressing the feedback points
-
-## Example Improvements
-
-Common enhancements made through reflection:
-- Better color schemes and contrast
-- Improved axis labels, legends and titles
-- Enhanced data presentation clarity
-- More professional styling and formatting
-- Better chart type selection for the data
-
-## Model Combinations Tested
-
-The notebook compares different LLM pairings:
-- GPT-4o-mini (generation) + GPT-4o (evaluation)
-
-This demonstrates how different AI models can collaborate effectively in a multi-agent reflection system.
