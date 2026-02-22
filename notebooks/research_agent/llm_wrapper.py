@@ -1,0 +1,14 @@
+from openai import OpenAI
+
+class LLMWrapper:
+    def __init__(self, api_key: str, model: str = "gpt-4o-mini"):
+        self.client = OpenAI(api_key=api_key)
+        self.model = model
+
+    def invoke(self, prompt: str) -> str:
+        response = self.client.chat.completions.create(
+            model=self.model,
+            temperature=0,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return response.choices[0].message.content
