@@ -9,4 +9,5 @@ anthropic
 html
 IPython
 openpyxl
+tavily
 	
