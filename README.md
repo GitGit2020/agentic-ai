@@ -1,78 +1,148 @@
-# Agentic AI: Reflection and Tool Use
+```{=html}
+<p align="center">
+```
+`<img src="images/agentic_ai_banner.png" width="900">`{=html}
+```{=html}
+</p>
+```
+# 🚀 Agentic AI --- Design Patterns for Autonomous LLM Systems
 
-This repository contains practical notebooks that demonstrate the core control patterns behind agentic AI systems.
+A collection of **hands-on notebooks demonstrating the core architectural patterns behind modern agentic AI systems.**
 
-Rather than focusing on frameworks, these notebooks break down the fundamental building blocks that enable agents to reason, extend capabilities, and improve outputs.
+This repository focuses on **how real LLM agents are structured**, including:
 
----
+-   🔁 Reflection loops\
+-   🛠 Tool-using agents\
+-   🧠 Memory\
+-   🤝 Multi-agent systems\
+-   📊 Agent evaluation frameworks
 
-## Notebooks Overview
+Each notebook isolates **one key capability required to build reliable autonomous AI systems.**
 
-### 1️⃣ Reflection — Chart Generation and Improvement
+------------------------------------------------------------------------
 
-`reflection_chart_generation.ipynb`
+# 📚 Repository Overview
 
-Demonstrates the **reflection design pattern**, where:
+  ----------------------------------------------------------------------------------------------
+  Concept         Description                      Notebook
+  --------------- -------------------------------- ---------------------------------------------
+  🔁 **Reflection LLM generates a chart, critiques `reflection_chart_generation.ipynb`
+  Pattern**       its own output, and improves the 
+                  result through iterative         
+                  feedback loops.                  
 
-- One LLM generates a visualization
-- Another LLM evaluates the result
-- The system revises the output based on structured feedback
+  🛠 **Tool-Using  Demonstrates how LLM agents      `tool_use_retail_agent.ipynb`
+  Agent**         select and execute analytical    
+                  tools to answer retail data      
+                  questions.                       
 
-Control loop introduced:
+  🧠 **Agentic    A recommendation agent that      `memory_movie_recommendation_agent.ipynb`
+  Memory**        stores and retrieves user        
+                  preferences to improve responses 
+                  over time.                       
 
-Generate → Evaluate → Revise
+  🤝              Multiple specialized agents      `bank_marketing_multi_agent_workflow.ipynb`
+  **Multi-Agent   collaborate to perform bank      
+  Workflow**      marketing analysis and           
+                  recommendations.                 
 
-Key ideas:
-- Output validation as a control mechanism
-- Structured critique of artifacts (charts)
-- Separation of generation and evaluation roles
-- Iterative refinement
+  📊 **Agent      Framework for evaluating         `evals_financial_research_agent.ipynb`
+  Evaluation**    reasoning quality and            
+                  reliability of a financial       
+                  research agent.                  
+  ----------------------------------------------------------------------------------------------
 
----
+------------------------------------------------------------------------
 
-### 2️⃣ Tool Use — Retail Agent with Multiple Tools
+# 🧠 Agent Architecture Patterns
 
-`tool_use_retail_agent.ipynb`
+Modern LLM agents rely on **structured reasoning workflows rather than
+single prompts.**
 
-Demonstrates how agents extend their capabilities using deterministic tools over external data.
+A typical agent loop looks like this:
 
-The notebook introduces:
+    User Query
+        ↓
+    Planner Agent
+        ↓
+    Tool Execution
+        ↓
+    Memory Retrieval
+        ↓
+    Reflection / Critique
+        ↓
+    Final Response
 
-Interpret → Decide → Execute → Integrate
+The notebooks in this repository demonstrate **different components of
+this architecture.**
 
-Key ideas:
-- Detecting when model knowledge is insufficient
-- Selecting the appropriate tool from multiple options
-- Structured argument contracts
-- Integrating tool outputs into final reasoning
-- Handling tool failures gracefully
-- Avoiding unnecessary tool calls
+------------------------------------------------------------------------
 
-The retail example uses transactional data to simulate interaction with an external system.
+# 🧩 Design Principles
 
----
+The examples in this repository follow a few key principles:
 
-## Core Concepts Covered
+### 1️⃣ Explicit Agent Control Loops
 
-Across both notebooks, the following agentic principles are demonstrated:
+Agents are implemented using **clear reasoning workflows**, not hidden prompt chains.
 
-- **Control Loops**: Structured reasoning before and after actions
-- **Separation of Concerns**: Generation vs evaluation vs execution
-- **Deterministic Tools**: External capabilities as strict interfaces
-- **Structured Outputs**: JSON-based decision making
-- **Failure Handling**: Robust behavior when tools return missing data
-- **Conditional Capability Use**: Agents must decide when to act
+### 2️⃣ Minimal but Realistic Implementations
 
----
+Examples are simplified for learning while still reflecting **real AI system design patterns.**
+
+### 3️⃣ Modular Responsibilities
+
+Different components are separated:
+
+-   reasoning
+-   tool execution
+-   memory
+-   evaluation
+
+### 4️⃣ Reproducible Workflows
+
+Each notebook demonstrates **one standalone agent architecture pattern.**
+
+------------------------------------------------------------------------
+
+# ⚙️ Running the Notebooks
+
+Clone the repository:
+
+``` bash
+git clone https://github.com/adarsh-aiml/agentic-ai.git
+cd agentic-ai/notebooks
+```
 
 ## Prerequisites
 
 Create a `.env` file in the root of the repository with:
 
 - `OPENAI_API_KEY`
-- `ANTHROPIC_API_KEY`
+- `TAVILY_API_KEY`
 
 Install dependencies:
 
-```bash
+``` bash
 pip install -r requirements.txt
+```
+
+Run the notebooks sequentially to observe **agent reasoning workflows in action.**
+
+------------------------------------------------------------------------
+
+
+# 👤 Author
+
+**Adarsh Mishra**
+
+Applied AI/ML Practioner exploring:
+
+-   Agentic AI systems\
+-   LLM reasoning architectures\
+-   Applied AI workflows
+-   ML System Design
+
+------------------------------------------------------------------------
+
+⭐ If you find this repository useful, consider **starring it.**
