@@ -23,11 +23,11 @@ Each notebook isolates **one key capability required to build reliable autonomou
   ----------------------------------------------------------------------------------------------
 | Concept | Description | Notebook |
 |--------|-------------|----------|
-| 🔁 **Reflection Pattern** | LLM generates a chart, critiques its own output, and improves the result through iterative feedback loops. | [reflection_chart_generation.ipynb](reflection_chart_generation.ipynb) |
-| 🛠 **Tool-Using Agent** | Demonstrates how LLM agents select and execute analytical tools to answer retail data questions. | [tool_use_retail_agent.ipynb](tool_use_retail_agent.ipynb) |
-| 🧠 **Agentic Memory** | A recommendation agent that stores and retrieves user preferences to improve responses over time. | [memory_movie_recommendation_agent.ipynb](memory_movie_recommendation_agent.ipynb) |
-| 🤝 **Multi-Agent Workflow** | Multiple specialized agents collaborate to perform bank marketing analysis and recommendations. | [bank_marketing_multi_agent_workflow.ipynb](bank_marketing_multi_agent_workflow.ipynb) |
-| 📊 **Agent Evaluation** | Framework for evaluating reasoning quality and reliability of a financial research agent. | [evals_financial_research_agent.ipynb](evals_financial_research_agent.ipynb) |
+| 🔁 **Reflection Pattern** | LLM generates a chart, critiques its own output, and improves the result through iterative feedback loops. | [reflection_chart_generation.ipynb](notebooks/reflection_chart_generation.ipynb) |
+| 🛠 **Tool-Using Agent** | Demonstrates how LLM agents select and execute analytical tools to answer retail data questions. | [tool_use_retail_agent.ipynb](notebooks/tool_use_retail_agent.ipynb) |
+| 🧠 **Agentic Memory** | A recommendation agent that stores and retrieves user preferences to improve responses over time. | [memory_movie_recommendation_agent.ipynb](notebooks/memory_movie_recommendation_agent.ipynb) |
+| 🤝 **Multi-Agent Workflow** | Multiple specialized agents collaborate to perform bank marketing analysis and recommendations. | [bank_marketing_multi_agent_workflow.ipynb](notebooks/bank_marketing_multi_agent_workflow.ipynb) |
+| 📊 **Agent Evaluation** | Framework for evaluating reasoning quality and reliability of a financial research agent. | [evals_financial_research_agent.ipynb](notebooks/evals_financial_research_agent.ipynb) |
   ----------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
