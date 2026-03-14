@@ -1,20 +1,17 @@
-```{=html}
 <p align="center">
-```
-`<img src="images/agentic_ai_banner.png" width="900">`{=html}
-```{=html}
+  <img src="images/agentic_ai_banner.png" width="900">
 </p>
-```
+
 # 🚀 Agentic AI --- Design Patterns for Autonomous LLM Systems
 
 A collection of **hands-on notebooks demonstrating the core architectural patterns behind modern agentic AI systems.**
 
 This repository focuses on **how real LLM agents are structured**, including:
 
--   🔁 Reflection loops\
--   🛠 Tool-using agents\
--   🧠 Memory\
--   🤝 Multi-agent systems\
+-   🔁 Reflection loops
+-   🛠 Tool-using agents
+-   🧠 Memory
+-   🤝 Multi-agent systems
 -   📊 Agent evaluation frameworks
 
 Each notebook isolates **one key capability required to build reliable autonomous AI systems.**
@@ -24,32 +21,13 @@ Each notebook isolates **one key capability required to build reliable autonomou
 # 📚 Repository Overview
 
   ----------------------------------------------------------------------------------------------
-  Concept         Description                      Notebook
-  --------------- -------------------------------- ---------------------------------------------
-  🔁 **Reflection LLM generates a chart, critiques `reflection_chart_generation.ipynb`
-  Pattern**       its own output, and improves the 
-                  result through iterative         
-                  feedback loops.                  
-
-  🛠 **Tool-Using  Demonstrates how LLM agents      `tool_use_retail_agent.ipynb`
-  Agent**         select and execute analytical    
-                  tools to answer retail data      
-                  questions.                       
-
-  🧠 **Agentic    A recommendation agent that      `memory_movie_recommendation_agent.ipynb`
-  Memory**        stores and retrieves user        
-                  preferences to improve responses 
-                  over time.                       
-
-  🤝              Multiple specialized agents      `bank_marketing_multi_agent_workflow.ipynb`
-  **Multi-Agent   collaborate to perform bank      
-  Workflow**      marketing analysis and           
-                  recommendations.                 
-
-  📊 **Agent      Framework for evaluating         `evals_financial_research_agent.ipynb`
-  Evaluation**    reasoning quality and            
-                  reliability of a financial       
-                  research agent.                  
+| Concept | Description | Notebook |
+|--------|-------------|----------|
+| 🔁 **Reflection Pattern** | LLM generates a chart, critiques its own output, and improves the result through iterative feedback loops. | [reflection_chart_generation.ipynb](reflection_chart_generation.ipynb) |
+| 🛠 **Tool-Using Agent** | Demonstrates how LLM agents select and execute analytical tools to answer retail data questions. | [tool_use_retail_agent.ipynb](tool_use_retail_agent.ipynb) |
+| 🧠 **Agentic Memory** | A recommendation agent that stores and retrieves user preferences to improve responses over time. | [memory_movie_recommendation_agent.ipynb](memory_movie_recommendation_agent.ipynb) |
+| 🤝 **Multi-Agent Workflow** | Multiple specialized agents collaborate to perform bank marketing analysis and recommendations. | [bank_marketing_multi_agent_workflow.ipynb](bank_marketing_multi_agent_workflow.ipynb) |
+| 📊 **Agent Evaluation** | Framework for evaluating reasoning quality and reliability of a financial research agent. | [evals_financial_research_agent.ipynb](evals_financial_research_agent.ipynb) |
   ----------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
@@ -136,10 +114,10 @@ Run the notebooks sequentially to observe **agent reasoning workflows in action.
 
 **Adarsh Mishra**
 
-Applied AI/ML Practioner exploring:
+Applied AI/ML practitioner exploring:
 
--   Agentic AI systems\
--   LLM reasoning architectures\
+-   Agentic AI systems
+-   LLM reasoning architectures
 -   Applied AI workflows
 -   ML System Design
 
