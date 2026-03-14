@@ -2,7 +2,7 @@
   <img src="images/agentic_ai_banner.png" width="900">
 </p>
 
-# 🚀 Agentic AI --- Design Patterns for Autonomous LLM Systems
+# 🚀 Agentic AI - Design Patterns for Autonomous LLM Systems
 
 A collection of **hands-on notebooks demonstrating the core architectural patterns behind modern agentic AI systems.**
 
